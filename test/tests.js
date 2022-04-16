@@ -7,25 +7,25 @@ contract('SupplyChain', async accounts => {
     var product2 = "0xDEF456";
     
     // test 1
-    it("should get a supplier address 1", async () => {
+    it("should get a supplier address", async () => {
         let instance = await SupplyChain.deployed();
         let tempParticipantID = await instance.addParticipant("John Doe", "Supplier", supplierAddress);
         let participantID = await instance.getParticipant(supplierAddress);
         assert.equal(participantID, 1, "Incorrect Supplier ID");
     }),
-    it("should get a supplier address 2", async () => {
+    it("should get a supplier address", async () => {
         let instance = await SupplyChain.deployed();
-        let tempParticipantID = await instance.addParticipant("Sally Smith", "Consumer", consumerAddress);
+        let tempParticipantID = await instance.addParticipant("Rebecca Smith", "Consumer", consumerAddress);
         let participantID = await instance.getParticipant(consumerAddress);
-        assert.equal(participantID, 2, "Incorrect Supplier ID");
+        assert.equal(participantID, 2, "Incorrect Consumer ID");
     }),
-    it("should get a product id 1", async () => {
+    it("should get a product id", async () => {
         let instance = await SupplyChain.deployed();
         let tempProductID = await instance.addProduct(product1, "Bananas");
         let productID = await instance.getProduct(product1);
         assert.equal(productID, 1, "Incorrect Product ID");
     }),
-    it("should get a product id 2", async () => {
+    it("should get a product id", async () => {
         let instance = await SupplyChain.deployed();
         let tempProductID = await instance.addProduct(product2, "Apples");
         let productID = await instance.getProduct(product2);
