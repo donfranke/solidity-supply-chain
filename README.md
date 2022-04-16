@@ -4,12 +4,14 @@ This is an initial project created from scratch to begin learning about how to d
 
 ## Development Environment
 
-| Tool               | Description                                                                                                                             |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Ganache            | Provides a local blockchain to deploy the contract to                                                                                   |
-| Microsoft VSCode   | Excellent integrated development environment                                                                                            |
-| solidity extension | The de-facto solidity plugin for VSCode                                                                                                 |
-| Truffle Suite      | A command-line suite of tools that provide compilation, testing and deploying smart contracts to development and production blockchains |
+| Tool                | Description                                                                                                                             |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Ganache             | Provides a local blockchain to deploy the contract to                                                                                   |
+| Microsoft VSCode    | Excellent integrated development environment                                                                                            |
+| solidity extension  | The de-facto solidity plugin for VSCode                                                                                                 |
+| Truffle Suite       | A command-line suite of tools that provide compilation, testing and deploying smart contracts to development and production blockchains |
+| Infura (optional)   | For deploying a contract to test networks like ropsten                                                                                  |
+| Metamask (optional) | Web browser extension to manage wallets                                                                                                 |
 
 ## Design
 
@@ -23,7 +25,7 @@ The design is simple, as the intent of the project is to gain experience deevelo
 
 There are also test created in the tests.js file, which I would run to validate functionality and identify problems.
 
-## Running
+## Testing (Compilation and Deployment)
 
 Once set up, the following are the steps I took to test changes. Using the VS code terminal:
 
