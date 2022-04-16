@@ -1,0 +1,352 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "productId",
+						"type": "uint32"
+					}
+				],
+				"name": "OwnershipEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "_participant_id",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_product_id",
+						"type": "uint32"
+					}
+				],
+				"name": "addEvent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pType",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_pAddress",
+						"type": "address"
+					}
+				],
+				"name": "addParticipant",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_uniqueID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_productName",
+						"type": "string"
+					}
+				],
+				"name": "addProduct",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"name": "events",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "eventID",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "participantID",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "productID",
+						"type": "uint32"
+					},
+					{
+						"internalType": "string",
+						"name": "eventDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "eventTimestamp",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "g_event_id",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "g_participant_id",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "g_product_id",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "_event_id",
+						"type": "uint32"
+					}
+				],
+				"name": "getEvent",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "eventDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "eventTimestamp",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getParticipant",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_unique_id",
+						"type": "string"
+					}
+				],
+				"name": "getProduct",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"name": "participants",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "participantID",
+						"type": "uint32"
+					},
+					{
+						"internalType": "string",
+						"name": "userName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "participantType",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "participantAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"name": "products",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "productID",
+						"type": "uint32"
+					},
+					{
+						"internalType": "string",
+						"name": "uniqueID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "productName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\SupplyChain.sol": "SupplyChain"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\SupplyChain.sol": {
+			"keccak256": "0x7c49108c7face7b6d201e21ab4d9d2e0d6c5b0639e7c30496b63b83a2a59a324",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b0f9262e97dfffc41f676d46912eab32c85d4d999b27ef1af5a86495afcf12ea",
+				"dweb:/ipfs/QmVxpcCE7wrZuKCw41nXyZuvP5qaKQ4mnQk5CCnKVbRFm5"
+			]
+		}
+	},
+	"version": 1
+}

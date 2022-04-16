@@ -10,6 +10,7 @@ This is an initial project created from scratch to begin learning about how to d
 | Microsoft VSCode    | Excellent integrated development environment                                                                                            |
 | solidity extension  | The de-facto solidity plugin for VSCode                                                                                                 |
 | Truffle Suite       | A command-line suite of tools that provide compilation, testing and deploying smart contracts to development and production blockchains |
+| Remix Extension     | Excellent way to test contract code using VSCode                                                                                        |
 | Infura (optional)   | For deploying a contract to test networks like ropsten                                                                                  |
 | Metamask (optional) | Web browser extension to manage wallets                                                                                                 |
 
